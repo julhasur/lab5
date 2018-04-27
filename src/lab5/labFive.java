@@ -20,12 +20,12 @@ public class labFive {
 		System.out.println("Enter a number: ");
 		Usernumber=scnr.nextInt();
 			
-		if((Usernumber<1)||(Usernumber>10)) {
+		if((Usernumber<1)||(Usernumber>10)) { //to validate the number
 				System.out.println("Please enter a number between 1 to 10 only.");
 		}
-		 else if ((Usernumber>=1)&&(Usernumber<=11)) {
+		 else if ((Usernumber>=1)&&(Usernumber<=11)) {//if the number is right the program starts running
 		
-		System.out.println(factorial(Usernumber));
+		System.out.println(factorial(Usernumber));//calling method (factorial)
 		 }
 		System.out.println("would you like to continue(Y/N)");
 		 
@@ -33,7 +33,7 @@ public class labFive {
 		option=scnr.next().charAt(0);
 		 }
 		
-		while((option!='n')&&(option!='N'));
+		while((option!='n')&&(option!='N'));//to validate if the user wants to continue
 		   System.out.println("Bye");  
 	}
 
@@ -45,7 +45,7 @@ public class labFive {
 	
 
 
-
+//creating another method to do all the calculation.
 	public static long factorial (int number) {
 		
 		
